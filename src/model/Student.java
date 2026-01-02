@@ -1,39 +1,39 @@
 package model;
 public class Student {
-    private String studentName;
-    private int studentId;
-    private int studentAge;
+    private String name;
+    private int id;
+    private int age;
     private String email;
     // defining the constructure
-    public Student(String studentName, int studentId, int studentAge, String email){
+    public Student(String name, int id, int age, String email){
         this.email = email;
-        this.studentAge = studentAge;
-        this.studentId = studentId;
-        this.studentName = studentName;
+        this.age = age;
+        this.id = id;
+        this.name = name;
 
     }
     // defining getters
-    public String getStudentName(){
-        return studentName;
+    public String getName(){
+        return name;
     }
-    public int getStudentId(){
-        return studentId;
+    public int getId(){
+        return id;
     }
-    public int getStudentAge(){
-        return studentAge;
+    public int getAge(){
+        return age;
     }
     public String getEmail(){
         return email;
     }
     //defining setters
-    public void setStudentName(String studentName){
-        this.studentName = studentName;
+    public void setName(String name){
+        this.name = name;
     }
-    public void setStudentId(int studentId){
-        this.studentId = studentId;
+    public void setId(int id){
+        this.id = id;
     }
-    public void setStudentAge(int studentAge){
-        this.studentAge = studentAge;
+    public void setStudentAge(int age){
+        this.age = age;
     }
     public void setEmail(String email){
         this.email = email;
