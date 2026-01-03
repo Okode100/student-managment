@@ -14,9 +14,12 @@ public class StudentService {
         students.add(student);
     }
 
-    public  List<Student> getAllStudent(){
+    public  List<Student> getAllStudents(){
         return students;
 
+    }
+    public void findStudentById(int id){
+        return Student.filter(student -> student !=null && student.equals(id))
     }
 }
 

@@ -25,7 +25,7 @@ public class Main {
         view.showStudentCreated(student1);
         view.showStudentCreated(student2);
 
-        List<Student> allStudents = service.getAllStudent();
+        List<Student> allStudents = service.getAllStudents();
         view.showAllStudents(allStudents);
     }
 }
