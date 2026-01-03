@@ -10,7 +10,7 @@ public class StudentController {
     private final StudentService service = new StudentService();
     public  Student createStudent(String name, int age, int id, String email ){
         //initialize the Student class
-        Student student = new Student(name, age, id, email);
+        Student student = new Student(id,name, age, email);
         service.registerStudent(student);
         return student;
 

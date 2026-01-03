@@ -5,7 +5,7 @@ public class Student {
     private int age;
     private String email;
     // defining the constructure
-    public Student(String name, int age, int id, String email){
+    public Student(int id, String name, int age, String email){
         this.email = email;
         this.age = age;
         this.id = id;
@@ -32,7 +32,7 @@ public class Student {
     public void setId(int id){
         this.id = id;
     }
-    public void setStudentAge(int age){
+    public void setAge(int age){
         this.age = age;
     }
     public void setEmail(String email){
