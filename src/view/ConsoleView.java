@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ConsoleView {
 
-    public void showStudentCreated(Student student) {
+    public void showStudentCreated(String student) {
         System.out.println("Student registered successfully:");
         System.out.println(
                 "ID: " + student.getId() +

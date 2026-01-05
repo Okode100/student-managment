@@ -10,16 +10,26 @@ import java.util.List;
 public class StudentService {
     private final List<Student> students = new ArrayList<>();
 
-    public  void registerStudent(Student student){
-        students.add(student);
-    }
-
     public  List<Student> getAllStudents(){
         return students;
 
     }
-    public void findStudentById(int id){
-        return Student.filter(student -> student !=null && student.equals(id))
+    public Student findStudentById(int id) {
+        for (Student student : students) {
+            if (student.getId() == id) {
+                return student;
+            }
+        }
+        return null;
     }
+
+    public String registerStudent(Student student){
+        if(findStudentById(student.getId()) != null){
+            return "Student already exist";
+        }
+        students.add(student);
+        return "Studnet registered succefuly";
+    }
+
 }
 

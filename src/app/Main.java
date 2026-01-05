@@ -1,6 +1,6 @@
 package app;
 
-import util.StudentController;
+import controller.StudentController;
 import model.Student;
 import view.ConsoleView;
 import service.StudentService;
@@ -14,11 +14,11 @@ public class Main {
         ConsoleView view = new ConsoleView();
         StudentService service = new StudentService();
 
-        Student student1 = controller.createStudent(
+        String student1 = controller.createStudent(
                 "Moses okode", 22, 22, "moses@mail.com"
         );
 
-        Student student2 = controller.createStudent(
+        String student2 = controller.createStudent(
                 "James okode", 22, 24, "moses@mail.com"
         );
 
