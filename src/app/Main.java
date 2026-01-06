@@ -14,13 +14,13 @@ public class Main {
         ConsoleView view = new ConsoleView();
         StudentService service = new StudentService();
 
-        String student1 = controller.createStudent(
+        String student1 = String.valueOf(controller.createStudent(
                 "Moses okode", 22, 22, "moses@mail.com"
-        );
+        ));
 
-        String student2 = controller.createStudent(
+        String student2 = String.valueOf(controller.createStudent(
                 "James okode", 22, 24, "moses@mail.com"
-        );
+        ));
 
         view.showStudentCreated(student1);
         view.showStudentCreated(student2);

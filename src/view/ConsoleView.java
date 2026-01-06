@@ -7,12 +7,13 @@ import java.util.List;
 public class ConsoleView {
 
     public void showStudentCreated(String student) {
+        Student stud = new Student();
         System.out.println("Student registered successfully:");
         System.out.println(
-                "ID: " + student.getId() +
-                        ", Name: " + student.getName() +
-                        ", Age: " + student.getAge() +
-                        ", Email: " + student.getEmail()
+                "ID: " + stud.getId() +
+                        ", Name: " + stud.getName() +
+                        ", Age: " + stud.getAge() +
+                        ", Email: " + stud.getEmail()
         );
     }
 

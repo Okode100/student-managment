@@ -5,19 +5,31 @@ public class Student {
     private int age;
     private String email;
     // defining the constructure
-    public Student(int id, String name, int age, String email){
+//    public Student(int id, String name, int age, String email){
+//        this.email = email;
+//        this.age = age;
+//        this.id = id;
+//        this.name = name;
+//
+//    }
+
+       public Student(int id, String name, int age, String email) {
         this.email = email;
         this.age = age;
         this.id = id;
         this.name = name;
+    }
+
+    public Student() {
 
     }
+
     // defining getters
     public String getName(){
         return name;
     }
     public int getId(){
-        return this.id;
+        return id;
     }
     public int getAge(){
         return age;
