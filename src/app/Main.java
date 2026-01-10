@@ -7,7 +7,6 @@ import service.StudentService;
 import java.util.List;
 
 public class Main {
-
     public static void main(String[] args) {
 
         StudentController controller = new StudentController();
